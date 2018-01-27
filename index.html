@@ -4,7 +4,7 @@ tagline:
 ---
 
 {% for post in paginator.posts %}
-
+<div class="lok">
 <article class="home">
   <span class="post-date">
     {% assign d = post.date | date: "%d" | plus:'0' %}
@@ -36,7 +36,7 @@ tagline:
     {% endif %}
   </div>
 
-</article>
+</article></div>
 {% endfor %}
 <hr/>
 
